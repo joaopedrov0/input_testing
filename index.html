@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>show_command</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Google Fonts Connection -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu" onclick="toggleMenuBtn()">
+            <span class="keyboard material-icons-outlined">keyboard</span>
+            <!-- <span class="mouse"></span> -->
+            <span class="gamepad material-icons-outlined">sports_esports</span>
+            <span class="hover-menu-btn keyboard-active"></span>
+        </div>
+        <div class="container keyboard active">
+            <h1>Keyboard Tester</h1>
+            <h2 class="keyboard">...</h2>
+        </div>
+        <!-- <div class="container mouse">
+            <h2 class="mouse">Mouse tester</h2>
+        </div> -->
+        <div class="container gamepad">
+            <h1>Gamepad Tester</h1>
+            <h2 class="gamepad">...</h2>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

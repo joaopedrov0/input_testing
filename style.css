@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+    font-family: 'Dosis', sans-serif;
+    
+
+    /* display: flex; */
+    justify-content: center;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    opacity: 0;
+
+    transition: all ease 200ms;
+
+    color: transparent;
+}
+
+.container > * {
+    transition: all ease 400ms;
+    transition-delay: 200ms;
+    transform: translateY(100px);
+}
+
+.container.active > * {
+    transform: translateY(0);
+}
+
+.menu{
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
+
+    color: rgba(240, 248, 255, 0.925);
+
+    cursor: pointer;
+}
+
+.menu > span {
+    width: 60px;
+    height: 40px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-menu-btn{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+
+    transition: all ease 600ms;
+}
+
+.hover-menu-btn.gamepad-active{
+    transform: translateX(50%);
+}
+.hover-menu-btn.keyboard-active{
+    transform: translateX(-50%);
+}
+
+
+
+.container.keyboard{
+    background: linear-gradient(23deg, rgba(62,6,92,1) 0%, rgba(187,0,22,1) 100%);
+}
+
+.container.gamepad{
+    background: linear-gradient(23deg, rgba(6,80,92,1) 0%, rgba(0,187,12,1) 100%);
+}
+
+.container.mouse{
+    background: linear-gradient(23deg, rgb(7, 150, 143) 0%, rgb(214, 233, 9) 100%);
+}
+
+.container.active{
+    display: flex;
+    opacity: 1;
+    color: rgba(240, 248, 255, 0.925);
+
+    transform: translateY(0);
+}
+
+
+h2.gamepad{
+    margin-top: 15px;
+}
+
+h2.gamepad span{
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: rgb(14, 13, 13);
+}

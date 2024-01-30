@@ -119,3 +119,27 @@ h2.gamepad span{
     border-radius: 5px;
     background-color: rgb(14, 13, 13);
 }
+
+.active h2.keyboard{
+    opacity: 1;
+}
+
+h2.keyboard{
+    font-size: 18px;
+    margin-top: 15px;
+    background-color: rgb(73, 73, 73);
+    padding: 15px 20px 20px 15px;
+    border-radius: 10px;
+    opacity: 0;
+    
+    box-shadow: 
+        5px 10px 3px rgb(54, 54, 54),
+        5px 5px 3px rgb(54, 54, 54),
+        0px 10px 3px rgb(54, 54, 54),
+        inset -5px -5px 5px rgb(61, 61, 61),
+        inset 3px 3px 3px rgb(80, 80, 80),
+        5px 10px 20px rgba(17, 17, 17, 0.4);
+
+        transition-delay: 1000ms;
+        transition: all ease 500ms;
+}
